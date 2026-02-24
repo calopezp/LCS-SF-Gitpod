@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup Salesforce CLI
+    init: |
+      npm install -g @salesforce/cli
+      sf --version
+      sf plugins
